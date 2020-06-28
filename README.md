@@ -11,7 +11,7 @@ Extract, Transform and Load data, work with big datasets.
 |[Project 5 - Code Wars](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%205%20-%20Code%20Wars)| Solving small problems at the code wars homepage|
 |[Project 6 - Kaggle Competitions](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%206%20-%20Kaggle%20Competitions)| Solving Kaggle Competitions|
 |[Project 7 - Power BI](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%207%20-%20Power%20BI)| Doing projects in Power BI|
-|[Project 8 - Tableau]|(https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%208%20-%20Tableau)| Doing projects in Tableau|
-|[Project 9 - Tableau]|()| Tableau as a base for Tableau Blogs|
-|[Project 9 - Medium Blogs]|()| Jupyter Notebooks as a base for Medium Blogs|
+|[Project 8 - Tableau](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%208%20-%20Tableau)| Doing projects in Tableau|
+|[Project 9 - Tableau](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%209%20-%20Tableau)| Tableau as a base for Tableau Blogs|
+|[Project 9 - Medium Blogs](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%2010%20-%20Medium%20Blogs)| Jupyter Notebooks as a base for Medium Blogs|
 
