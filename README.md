@@ -4,10 +4,8 @@ Extract, Transform and Load data, work with big datasets.
 # Projects
 |Folder names|Description| 
 |---|---|
-|[1 Python: Excel files but not locally saved](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/1_Python_Excel-not-locally-saved)|
-Play with Python environment; Jupyter Notebook, Scripting, Kaggle Competitions, Code Wars etc.|
-|[2 SQL: Excel withour crashing](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%202%20-%20Scripting%20in%20Shell)|
-Playing around with different SQL queries; CTE, Temp tables, Group By and other fun things|
+|[1 Python: Excel files but not locally saved](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/1_Python_Excel-not-locally-saved)| Play with Python environment; Jupyter Notebook, Scripting, Kaggle Competitions, Code Wars etc.|
+|[2 SQL: Excel withour crashing](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%202%20-%20Scripting%20in%20Shell)|Playing around with different SQL queries; CTE, Temp tables, Group By and other fun things|
 |[3 Power BI: Excel but with good graphs](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%203%20-%20SQL%20queries%20from%20postgreSQL)|
 Doing Visualizations and ETL from datasets in Power BI|
 |[4 Tableau: Power BI but with awesome vizzz](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/Project%204%20-%20Build%20an%20ETL%20Pipeline)|
