@@ -1,5 +1,7 @@
 # Data-Analysis-Projects
-Extract, Transform and Load data, work with big datasets.
+In this folder is all different kind of programs I use for doing different kind of data analysis projects.
+It is everything from doing ML competitions and EDA in python of interesting datasets, to analyzing datasets in Power BI or Tableau, to fun queries in SQL.
+Please take a look and explore and see if you find anything interesting!
 
 # Projects
 |Folder names|Description| 
