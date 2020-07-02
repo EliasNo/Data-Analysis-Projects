@@ -9,7 +9,7 @@ In the beginning these projects will be very similar to the ones in Power BI, as
 |[Project 2: Cancer](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_2_Cancer)|Analyzing dataset regarding cancer|
 |[Project 3: Car Purchases](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_3_car-purchases)|Analyzing dataset of car purchases|
 |[Project 4: Gapminder](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_4_gapminder)|Analyzing the Gapminder dataset|
-|[Project 5: Google Analytics](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/5_BigQuery_SQL-with-inferiority)|Analyzing dataset regarding Google Analytics|
+|[Project 5: Google Analytics](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_5_Google-Analytics)|Analyzing dataset regarding Google Analytics|
 |[Project 6: Indian Job Seekers](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_6_Indian-Job-Seekers)|Analyzing dataset from Kaggle regarding Indian Job seekers, preprocessed in Python by me before|
 |[Project 7: Life Expectancy vs Health](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_7_Life-Vs-Health)|Analyzing the combination fo life expectancy and health|
 |[Project 8: Measles Cases](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_8_Measles-Cases)|Visualize measle cases over time in US|
