@@ -1,0 +1,2084 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Cheat Sheets </title>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Cheat Sheets</h1>
+        </header>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'SQL')" id="defaultOpen">SQL</button>
+            <button class="tablinks" onclick="openCity(event, 'Python')">Python</button>
+            <button class="tablinks" onclick="openCity(event, 'GIT')">GIT</button>
+            <button class="tablinks" onclick="openCity(event, 'HTML')">HTML</button>
+            <button class="tablinks" onclick="openCity(event, 'CSS')">CSS</button>
+            <button class="tablinks" onclick="openCity(event, 'Javascript')">Javscript</button>
+            <button class="tablinks" onclick="openCity(event, 'About_Us')">About us</button>
+        </div>
+        <div id="SQL" class="tabcontent">
+            <div id="basic">
+                <h2>Basic - SQL</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">SELECT Col1, Col2 </td>
+                            <td>Select what</td>
+                            <td>Selecting everything from what is filtered</td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM Table</td>
+                            <td>Where from</td>
+                            <td>Deciding where to chose from</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LIMIT 10</td>
+                            <td>How much</td>
+                            <td>Deciding how many rows to chose</td>
+                        </tr>
+                        <tr>
+                            <td class="code">ORDER BY Col</td>
+                            <td>Sorting query</td>
+                            <td>Deciding which to sort after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col > 5</td>
+                            <td>Filter</td>
+                            <td>Condition to filter after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col LIKE '%me%'</td>
+                            <td>Label-based</td>
+                            <td>What to start/end with</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col IN ('Y', 'N')</td>
+                            <td>Other filter statement</td>
+                            <td>Several things to filter after</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="joins">
+                <h2>SQL joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td>Easier to work with if aliasing tables</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="aggregations">
+                <h2>SQL Aggregations</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">COUNT(id) AS account_id_count</td>
+                            <td>Count non null values</td>
+                            <td>Count the number of values that are not null</td>
+                        </tr>
+                        <tr>
+                            <td class="code">SUM(poster_qty) AS total_poster_qty</td>
+                            <td>Finds total sum</td>
+                            <td>Finds the total sum of something in table</td>
+                        </tr>
+                        <tr>
+                            <td class="code">MIN/MAX(standard_qty) max_qty</td>
+                            <td>Takes Min/Max Value</td>
+                            <td>Ignore Non-values, per specific thing</td>
+                        </tr>
+                        <tr>
+                            <td class="code">AVG(standard_qty) mean_qty</td>
+                            <td>Takes the average</td>
+                            <td>Easier to Alias if in SELECT cause </td>
+                        </tr>
+                        <tr>
+                            <td class="code">GROUP BY a.name</td>
+                            <td>Like Pivot table</td>
+                            <td>Chose which column to pivota, like count!</td>
+                        </tr>
+                        <tr>
+                            <td class="code">HAVING COUNT(*) > 6</td>
+                            <td>Like a where clause but group</td>
+                            <td>Interesting concept!</td>
+                        </tr>
+                        <tr>
+                            <td class="code">DATE_PART('year', occurred_at) ord_year</td>
+                            <td>Take out data</td>
+                            <td>Good to use when wanting to take out specific year</td>
+                        </tr>
+                        <tr>
+                            <td class="code">CASE WHEN ... ELSE ... END AS</td>
+                            <td>Make bins etc</td>
+                            <td>Good to use if want to make bins or similar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="subquery/temp_table">
+                <h2>Subquery/Temp table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">FROM (SELECT) sub, ...</td>
+                            <td>In SELECT Statement</td>
+                            <td>Can do DRY and smarter functions with subq</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE clause</td>
+                            <td>Also possible</td>
+                            <td>Cause why not :)</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WITH t1 AS (SELECT), t2 AS (</td>
+                            <td>Nicer code</td>
+                            <td>Same as subquery, but can have outside</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="data cleaning">
+                <h2>Data Cleaning</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">LEFT(UPPER(name), 1)</td>
+                            <td>From left</td>
+                            <td>Takes the first letter</td>
+                        </tr>
+                        <tr>
+                            <td class="code">RIGHT(website, 3) AS domain</td>
+                            <td>From right</td>
+                            <td>Takes last three letters</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT(a, STRPOS(a, ' '), -1)</td>
+                            <td>Stripping</td>
+                            <td>Takes everything before space</td>
+                        </tr>
+                        <tr>
+                            <td class="code">CONCAT(first_name, ',', last_name)</td>
+                            <td>Merges</td>
+                            <td>Merges together two strings </td>
+                        </tr>
+                        <tr>
+                            <td class="code">CAST ||, SUBSTR(date, 7, 4) || '-'</td>
+                            <td>Can change type</td>
+                            <td>Changes the type, for example dates, || is cast</td>
+                        </tr>
+                        <tr>
+                            <td class="code">COALESCE(a.id, a.id)</td>
+                            <td>Does something</td>
+                            <td>Not really sure what</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="window_function">
+                <h2>SQL Window Function</h2>
+                <table>
+                    <thead> 
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">SUM () OVER (ORDER BY ....) AS ...</td>
+                            <td>Syntax of it</td>
+                            <td>Usually involves OVER (ORDER BY)</td>
+                        </tr>
+                        <tr>
+                            <td class="code">OVER (PARTITION BY ....)</td>
+                            <td>Filter inside filter</td>
+                            <td>For example, order by highest sum per month per prd</td>
+                        </tr>
+                        <tr>
+                            <td class="code">RANK()</td>
+                            <td>Ranking something</td>
+                            <td>Yahhh</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WINDOW .... AS (PART ...)</td>
+                            <td>Aliases</td>
+                            <td>If using something many times, alias it </td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEAD/LAG</td>
+                            <td>Compare</td>
+                            <td>If comparing to previous/next</td>
+                        </tr>
+                        <tr>
+                            <td class="code">NTILE(4)</td>
+                            <td>Percentiles</td>
+                            <td>Taking quantiles or percentiles</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="advanced_joins">
+                <h2>Advanced joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">FULL OUTER JOIN</td>
+                            <td>Very fun</td>
+                            <td>Fun Join</td>
+                        </tr>
+                        <tr>
+                            <td class="code">ON AND JOIN</td>
+                            <td>Inequality joins</td>
+                            <td>Good to have sometimes</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Self JOINs/td>
+                            <td>Join with itself</td>
+                            <td>Sometimes good to do</td>
+                        </tr>
+                        <tr>
+                            <td class="code">UNION</td>
+                            <td>Thing</td>
+                            <td>Fun Thing </td>
+                        </tr>
+                        <tr>
+                            <td class="code">JOIN subqueries</td>
+                            <td>Can be good</td>
+                            <td>Sometimes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+        <div id="Python" class="tabcontent">
+            <div id="string_methods">
+                <h2>Data types and operators</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">+, /, *</td>
+                            <td>Arithmetic Operators</td>
+                            <td>Perform arithmetic calculations</td>
+                        </tr>
+                        <tr>
+                            <td class="code">+=, *=, -=</td>
+                            <td>Variables and assignments</td>
+                            <td>Assign variables + Operators</td>
+                        </tr>
+                        <tr>
+                            <td class="code">>=, and</td>
+                            <td>Comparison/Logical Operators</td>
+                            <td>More type of operators</td>
+                        </tr>
+                        <tr>
+                            <td class="code">len(a), print(a + "hej" 0 b)</td>
+                            <td>Strings</td>
+                            <td>String operations</td>
+                        </tr>
+                        <tr>
+                            <td class="code">str(), int()</td>
+                            <td>Type conversion</td>
+                            <td>Can convert to strin and integer</td>
+                        </tr>
+                        <tr>
+                            <td class="code">islower(),{}.format()</td>
+                            <td>String Methods</td>
+                            <td>Can do nice sentences</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="index">
+                <h2>Data structures</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">list_1 = [1, 3, 4, 7], <br> list_1[2], list_1[-1]</td>
+                            <td>Create + Index list</td>
+                            <td>Lists are Mutable and Ordered [ ]</td>
+                        </tr>
+                        <tr>
+                            <td class="code">len(list_1), sorted(list_1)</td>
+                            <td>List methods</td>
+                            <td>Take the length and make list sorted</td>
+                        </tr>
+                        <tr>
+                            <td class="code">"\n".join(["a","b"]), list_1.append('a)</td>
+                            <td>More list methods</td>
+                            <td>First one make them column, second adds</td>
+                        </tr>
+                        <tr>
+                            <td class="code">dimensions = 52, 40, 100 <path-to-repo></td>
+                            <td>Creates a tuple</td>
+                            <td>Tuples are Immutable and Ordered, not add/remove, together ( )</td>
+                        </tr>
+                        <tr>
+                            <td class="code">length, width, height = dimensions</td>
+                            <td>Tuple unpacking</td>
+                            <td>Will set length as 52, width as 40, dimension as 100</td>
+                        </tr>
+                        <tr>
+                            <td class="code">set.add(a), set.pop(b)</td>
+                            <td>Sets</td>
+                            <td>Sets are mutable but unordered and unique set()</td>
+                        </tr>
+                        <tr>
+                            <td class="code">elements = {'hydrogen': 1, 'helium': 2}</td>
+                            <td>Dictionaries</td>
+                            <td>Dictionaries are immutable, unordered {}</td>
+                        </tr>
+                        <tr>
+                            <td class="code">element = {'hydrogen': {'number': 1, 'weight': 2}, a{}}</td>
+                            <td>Compound data structures</td>
+                            <td>Dictionary inside dictionary, element['helium']['number'] works</td>
+                        </tr>
+                        <tr>
+                            <td class="code">length, width, height = dimensions</td>
+                            <td>Compound data structures</td>
+                            <td>Will set lenth as 52, width as 40, dimension as 100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="index">
+                <h2>Control Flow</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">if a < b: print('yes'), else: prin('no')</td>
+                            <td>Conditional Statements</td>
+                            <td>Do different things depending on condition</td>
+                        </tr>
+                        <tr>
+                            <td class="code">if (not) is_cold: print("Good weather")</td>
+                            <td>True by default</td>
+                            <td>Don't write if is_cold = True!</td>
+                        </tr>
+                        <tr>
+                            <td class="code">a = [] for word in range(sentence): a.append(word)</td>
+                            <td>For loops</td>
+                            <td>Add every word in sentence to a</td>
+                        </tr>
+                        <tr>
+                            <td class="code">word = {} for w in book: if w not in word: word[w] = 1 <br> else word[w]+=1<path-to-repo></td>
+                            <td>Build dictionary with for</td>
+                            <td>Quick way to build a dictionary</td>
+                        </tr>
+                        <tr>
+                            <td class="code">for key, value in cast.items():</td>
+                            <td>Iterate over dictionary I</td>
+                            <td>There are several key-value pairs, which are iterated through here</td>
+                        </tr>
+                        <tr>
+                            <td class="code">for object, count in basket.items(): <br> if object in fruits: result += count</td>
+                            <td>Iterate over dictionary II</td>
+                            <td>Will add 1 to each value in basket where object = fruit</td>
+                        </tr>
+                        <tr>
+                            <td class="code">while current <= number: product *= current current += 1</td>
+                            <td>While loops doing factorial</td>    
+                            <td>wnile loops are good, when until condition</td>
+                        </tr>
+                        <tr>
+                            <td class="code">if weight >= 100: break, if food not in fruit: continue</td>
+                            <td>break, continue</td>
+                            <td>Break = whole loop, continue = one iteration of loop</td>
+                        </tr>
+                        <tr>
+                            <td class="code">print(list(zip(items, weights))), <br> items, weights = zip(*manifest)</td>
+                            <td>zip</td>
+                            <td>Combine the two lists or split one list into two lists</td>
+                        </tr>
+                        <tr>
+                            <td class="code">for i, item in enumerate(items): print(i, item)</td>
+                            <td>enumurate</td>
+                            <td>Return indices and the values from list</td>
+                        </tr>
+                        <tr>
+                            <td class="code">capitalized_cities = [city.title() for city in cities]</td>
+                            <td>list comprehensions I</td>
+                            <td>One line code, nice looking, create list with for loop</td>
+                        </tr>
+                        <tr>
+                            <td class="code">squares = [x**2 for x in range(9) if x % 2 == 0]</td>
+                            <td>list comprehensions II</td>
+                            <td>Takes the square of x from 1 to 9 if even</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="index">
+                <h2>Functions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">def func(height, radius): <br> pi = 3.14 return height*pi</td>
+                            <td>Defining functions</td>
+                            <td>Create function to clean up code and reusability</td>
+                        </tr>
+                        <tr>
+                            <td class="code">print(pi)</td>
+                            <td>Variable scope</td>
+                            <td>Cannot print pi from variable above as inside function</td>
+                        </tr>
+                        <tr>
+                            <td class="code">"""In this function"""</td>
+                            <td>Docstrings</td>
+                            <td>Surrounded by quotes, tells what function does</td>
+                        </tr>
+                        <tr>
+                            <td class="code">averages = list(map(lambda x: sum(x) / len(x), numbers))</td>
+                            <td>Lambda expressions</td>
+                            <td>Creates anonymous functions/quick functions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="index">
+                <h2>Scripts</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">echo 'export PATH="$PATH:[YOUR_PATH]:[YOUR_PATH]/Scripts"'>>.bashrc</td>
+                            <td>Create .bashrc</td>
+                            <td>Need to create and run commando to run python in bash</td>
+                        </tr>
+                        <tr>
+                            <td class="code">echo 'alias python="winpty python.exe"' >> .bashrc</td>
+                            <td>Alias as python</td>
+                            <td>Alias it as python to be able to run quicker</td>
+                        </tr>
+                        <tr>
+                            <td class="code">python first_script.py</td>
+                            <td>Run script</td>
+                            <td>Will run the first_script file</td>
+                        </tr>
+                        <tr>
+                            <td class="code">x = eval(input('Enter an expression:'))</td>
+                            <td>Input from User</td>
+                            <td>Ask and takes input from user, put in x</td>
+                        </tr>
+                        <tr>
+                            <td class="code">x = input("Enter names, sep with comma: ").title().split(",")</td>
+                            <td>Take input, remake</td>
+                            <td>Removes the comma and make first letters big</td>
+                        </tr>
+                        <tr>
+                            <td class="code">try: ... except ...: print("")</td>
+                            <td>Error handling</td>
+                            <td>Print something if error</td>
+                        </tr>
+                        <tr>
+                            <td class="code">with open(filename) as f: for line in f: name = ...</td>
+                            <td>Read/Write to file</td>
+                            <td>With keyword will make the file open and close again</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="index">
+                <h2>Numpy</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">x = np.array([1, 2, 3]), x.dtype</td>
+                            <td>Create Numpy Arrays</td>
+                            <td>Creates a one dimension numpy array, says which type it is</td>
+                        </tr>
+                        <tr>
+                            <td class="code">y = np.array([1,2], [2,3]), y.shape, y.size</td>
+                            <td>Two dimensional</td>
+                            <td>Say (Rows,Columns), (Rows * Columns)</td>
+                        </tr>
+                        <tr>
+                            <td class="code">x = np.zeros((3,4)), np.ones((4,5), np.full((4,3), 5)</td>
+                            <td>Built-in array creation</td>
+                            <td>Only nulls, only ones, only fives</td>
+                        </tr>
+                        <tr>
+                            <td class="code">np.eye(5), np.diag(1, 2, 3), np.arange(1, 14, 3)</td>
+                            <td>More built-in creation</td>
+                            <td>Identity, diagonal and 1-14, with 3 as steps</td>
+                        </tr>
+                        <tr>
+                            <td class="code">np.arange(20).reshape((10, 2))</td>
+                            <td>Creates/reshape array</td>
+                            <td>Make a 10 row, 2 column, 1-20 array</td>
+                        </tr>
+                        <tr>
+                            <td class="code">x = np.random.random(3, 3)), np.random.randint(4, 15, (3, 2))<br>
+                            np.random.normal(0, 0.1, size=(1000, 1000))</td>
+                            <td>Create random arrays</td>
+                            <td>The first one random float, the second one random integer, third normal</td>
+                        </tr>
+                        <tr>
+                            <td class="code">x[0], x[-1], x[0,0], x[0,-1]</td>
+                            <td>Accessing elements</td>
+                            <td>Access first and second row, first and second column</td>
+                        </tr>
+                        <tr>
+                            <td class="code">np.delete(Y, 0, axis = 0), np.append(Y, [[1,2]], axis = 0)</td>
+                            <td>Deleting/appending elements</td>
+                            <td>First one delete first element, second appends two</td>
+                        </tr>
+                        <tr>
+                            <td class="code">z = X[1:, 2:]</td>
+                            <td>Slicing ndarrays I, not copy!</td>
+                            <td>Second row, third column until last, new name for X</td>
+                        </tr>
+                        <tr>
+                            <td class="code">z = X[1:, 2:].copy()</td>
+                            <td>Slicing ndarrays II</td>
+                            <td>Same as above but also creates a new array</td>
+                        </tr>
+                        <tr>
+                            <td class="code">z = X[:3, :2]</td>
+                            <td>Slicing ndarrays III</td>
+                            <td>First to third row and second column, new name for X</td>
+                        </tr>
+                        <tr>
+                            <td class="code">X[:, 2], X[:, 2:3]</td>
+                            <td>Slicing ndarrays IV</td>
+                            <td>All rows, second column, new name for X, "view"</td>
+                        </tr>
+                        <tr>
+                            <td class="code">X[X > 10], X[X <=7], X[X > 10) & (X < 17)] = -1</td>
+                            <td>Boolean indexing</td>
+                            <td>Only take elements that fullfill the conditions</td>
+                        </tr>
+                        <tr>
+                            <td class="code">np.intersect1d(x,y), np.setdiff1d(x,y), np.union1d(x,y)</td>
+                            <td>Set operations</td>
+                            <td>Good when wanting to find common elements in two arrays</td>
+                        </tr>
+                        <tr>
+                            <td class="code">np.sort(x), np.sort(np.unique(x)), np.sort(X, axis = 0)</td>
+                            <td>Sorting arrays</td>
+                            <td>Sort x, sort x and keep unique, sort by row in 2d array</td>
+                        </tr>
+                        <tr>
+                            <td class="code">np.add(x, y), np.multiple(x, y), np.sqrt(x), np.exp(x)</td>
+                            <td>Arithmetic operations/broadcasting</td>
+                            <td>Do arithmetic operations for the numpy arrays </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="index">
+                <h2>Pandas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">groc = pd.Series(data = [30, 6, 'Yes'], index =['eggs', 'a', 'milk']</td>
+                            <td>Create Pandas series</td>
+                            <td>Can hold different datatypes, can use index labels</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.shape, .ndim, .size, .index, .values, in 'groceries'</td>
+                            <td>Attributes</td>
+                            <td>Shape, dimension, size etc.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">groc['eggs'], groc[['eggs', bread']], groc[0], groc[-1]</td>
+                            <td>Accessing/Deleting elements</td>
+                            <td>Can both use index labels and indices</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.loc[['eggs', 'bread']], groc.iloc[[2, 3]]</td>
+                            <td>loc</td>
+                            <td>loc stands for location (label), iloc stands for int loc (numer)</td>
+                        </tr>
+                        <tr>
+                            <td class="code">groc['eggs'] = 2, groc.drop('apples', inplace=True)</td>
+                            <td>Mutable</td>
+                            <td>Change, delete, use inplace to make it change the series</td>
+                        </tr>
+                        <tr>
+                            <td class="code">groc * 2, groc - 2, groc + 2, np.sqrt(fruits)</td>
+                            <td>Arithmetic operations</td>
+                            <td>Can both use as they are or use numpys attributes</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df = pd.DataFraem(items)</td>
+                            <td>Pandas DataFrame</td>
+                            <td>Looks similar as a spreadsheet</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df.index, df.columns, df.values, df.shape, df.ndim, df.size</td>
+                            <td>Attributes</td>
+                            <td>Similar as for Pandas Series</td>
+                        </tr>
+                        <tr>
+                            <td class="code"> pd.DataFrame(items, columns=['Bob'] (index=['pants', 'book']))</td>
+                            <td>Column, index</td>
+                            <td>Can make a dataframe, but specify it on columns or items</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.isnull().sum().sum()</td>
+                            <td>Counting NaN</td>
+                            <td>Count how many NaN for the whole DataFrame</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.count().sum()</td>
+                            <td>Counting Non-NaN</td>
+                            <td>Count how many non-NaN in the whole DataFrame</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.dropna(axis=0), .fillna(0), .fillna(method='ffill', axis=0)</td>
+                            <td>Remove or Replace NaN</td>
+                            <td>Remoevs, replace with 0, replace with previous values</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.fillna(method='backfill', axis=0), interpolate(method='linear', axis=0)</td>
+                            <td>Replace NaN values</td>
+                            <td>Replaces with backwardfill, and linear interpolation</td>
+                        </tr>
+                        <tr>
+                            <td class="code">pd.read_csv('')</td>
+                            <td>Load data into pandas DataFrame</td>
+                            <td>From csv, </td>
+                        </tr>
+                        <tr>
+                            <td class="code">stock.head(), stock.tail(), .isnull().any(), .describe()</td>
+                            <td>Look at the data</td>
+                            <td>First five, last five, if any null in columns, some descriptive stats</td>
+                        </tr>
+                        <tr>
+                            <td class="code">stock.max(), stock.mean(), stock.corr()</td>
+                            <td>More look at the data</td>
+                            <td>Look at max values, mean values and correlations</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.groupby(['Year'])['Salary'].sum()</td>
+                            <td>Group by method I</td>
+                            <td>How high salary for each year</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.groupby(['Year'])['Salary'].mean()</td>
+                            <td>Group by method II</td>
+                            <td>How high mean salary for each year</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.groupby(['Name'])['Salary'].sum()</td>
+                            <td>Group by method III</td>
+                            <td>How high mean salary for each person</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="GIT" class="tabcontent">
+            <div id="git_repo">
+                <h2>Create a GIT Repo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">ls, mkdir, cd, rm</td>
+                            <td>Good commandos</td>
+                            <td>Look, make, working directory, remove</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git clone</td>
+                            <td>Clone</td>
+                            <td>Clones an existing repo</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git status</td>
+                            <td>Check status</td>
+                            <td>See what should be done</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="git_repo">
+                <h2>Review a GIT Repo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">git log</td>
+                            <td>Information</td>
+                            <td>Tells us commits, author, commit message etc</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git log --oneline</td>
+                            <td>Only commit message</td>
+                            <td>One line log commit messages</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git log --stat</td>
+                            <td>How many changes made</td>
+                            <td>Will show all changes made</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git log -p (--patch) --stat</td>
+                            <td>What changes + how many</td>
+                            <td>Will show specific changes on line and how many</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git show</td>
+                            <td>Specific commit</td>
+                            <td>Will do a --stat on specific commit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="git_repo">
+                <h2>Add a commit to a repo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">git add (c) /git add .</td>
+                            <td>Move files</td>
+                            <td>Moves from working directory to staging</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git commit -m "Initial commit"</td>
+                            <td>Move/commit files</td>
+                            <td>Moves from staging index to repository</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git diff</td>
+                            <td>See changes</td>
+                            <td>See changes made before commit</td>
+                        </tr>
+                        <tr>
+                            <td class="code">.gitignore</td>
+                            <td>Make git ignore files</td>
+                            <td>Add files that should not be committed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="tag_branch_merge">
+                <h2>Tag/Branch/Merge</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">git tag -a v1.0</td>
+                            <td>Extra information</td>
+                            <td>Make a commit standout from others</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git branch sidebar a</td>
+                            <td>Creates branch</td>
+                            <td>Creates a new branch sidebar</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git checkout -b footer master</td>
+                            <td>Change branch</td>
+                            <td>Creates and changes branch to footer</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git log --oneline --graph --all</td>
+                            <td>Nice map</td>
+                            <td>See how all the branches are related</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git merge -name-of-branch-</td>
+                            <td>Merge branches</td>
+                            <td>Fastforward/Regular</td>
+                        </tr>
+                        <tr>
+                            <td class="code">merge conflict</td>
+                            <td>Change same code</td>
+                            <td><<< HEAD ||| common ==== >>>></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="undo">
+                <h2>Undoing changes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">git commit --amend</td>
+                            <td>Most recent</td>
+                            <td>Alter the most recent commit</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git revert -SHA-of-commit-</td>
+                            <td>Reverting commit</td>
+                            <td>Revert a specific commit</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git reset --mixed HEAD^</td>
+                            <td>Resets and moves to wd</td>
+                            <td>Make backout first, then reset, dangerous</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git reset --soft HEAD^</td>
+                            <td>Resets and moves to SI</td>
+                            <td>Softer, only moves to staging index</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git reset --hard HEAD^</td>
+                            <td>Resets and removes</td>
+                            <td>Hardest, removes completely</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="remote">
+                <h2>Remotes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">git remote</td>
+                            <td>Talk with remote</td>
+                            <td>If cloned repo, automatically remote</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git push origin master</td>
+                            <td>Pushes to remote</td>
+                            <td>Will push master branch to remote</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git pull origin master</td>
+                            <td>Pulls from remote</td>
+                            <td>Make locally from remote, to work</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git fetch origin master</td>
+                            <td>Pulls, not merge</td>
+                            <td>Similar to pull, but doesn't automatically merge</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git fork</td>
+                            <td>Work with other person repo</td>
+                            <td>Duplicate the other persons repo</td>
+                        </tr>
+                        <tr>
+                            <td class="code">pull request</td>
+                            <td>Suggest change</td>
+                            <td>Suggest change to other persons repo</td>
+                        </tr>
+                        <tr>
+                            <td class="code">git rebase</td>
+                            <td>Change where you are</td>
+                            <td>Rick and Morty, back to the future</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Python" class="tabcontent">
+            <br>
+            <br>
+            <hr>
+            <div id="string_methods">
+                <h2>String Operations</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">string.upper()</td>
+                            <td>Uppercase</td>
+                            <td>Makes a string uppercase</td>
+                        </tr>
+                        <tr>
+                            <td class="code">string.lower()</td>
+                            <td>Lowercase</td>
+                            <td>Make a string lowecase</td>
+                        </tr>
+                        <tr>
+                            <td class="code">string.replace('a')</td>
+                            <td>Replace</td>
+                            <td>Replaces a specific letter</td>
+                        </tr>
+                        <tr>
+                            <td class="code">string.strip()</td>
+                            <td>Strip</td>
+                            <td>Strip a string on specific attribute</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+          
+        <div id="HTML" class="tabcontent">
+            <div id="basic">
+                <h2>Basic - SQL</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">SELECT Col1, Col2 </td>
+                            <td>Select what</td>
+                            <td>Selecting everything from what is filtered</td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM Table</td>
+                            <td>Where from</td>
+                            <td>Deciding where to chose from</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LIMIT 10</td>
+                            <td>How much</td>
+                            <td>Deciding how many rows to chose</td>
+                        </tr>
+                        <tr>
+                            <td class="code">ORDER BY Col</td>
+                            <td>Sorting query</td>
+                            <td>Deciding which to sort after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col > 5</td>
+                            <td>Filter</td>
+                            <td>Condition to filter after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col LIKE '%me%'</td>
+                            <td>Label-based</td>
+                            <td>What to start/end with</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col IN ('Y', 'N')</td>
+                            <td>Other filter statement</td>
+                            <td>Several things to filter after</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="joins">
+                <h2>SQL joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="aggregations">
+                <h2>SQL Aggregations</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="index">
+                <h2>Pandas - Indexing</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">df[:10]</td>
+                            <td>Index first</td>
+                            <td>Indexing the first 10 rows</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df[-10:]</td>
+                            <td>Index last</td>
+                            <td>Indexing the last 10 rows</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df.iloc[:,1]</td>
+                            <td>Index-based</td>
+                            <td>Indexing the first column</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df.iloc[:,-1]</td>
+                            <td>Index-based</td>
+                            <td>Indexing the last column</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df.loc['viper']</td>
+                            <td>Label-based</td>
+                            <td>Returns the row viper</td>
+                        </tr>
+                        <tr>
+                            <td class="code">df.loc[:, 'max_speed']</td>
+                            <td>Label-based</td>
+                            <td>Returns the column max_speed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subquery/temp_table">
+                <h2>Subquery/Temp table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="data cleaning">
+                <h2>Data Cleaning</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="window_function">
+                <h2>SQL Window Function</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="advanced_joins">
+                <h2>Advanced joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+        <div id="CSS" class="tabcontent">
+            <div id="basic">
+                <h2>Basic - SQL</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">SELECT Col1, Col2 </td>
+                            <td>Select what</td>
+                            <td>Selecting everything from what is filtered</td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM Table</td>
+                            <td>Where from</td>
+                            <td>Deciding where to chose from</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LIMIT 10</td>
+                            <td>How much</td>
+                            <td>Deciding how many rows to chose</td>
+                        </tr>
+                        <tr>
+                            <td class="code">ORDER BY Col</td>
+                            <td>Sorting query</td>
+                            <td>Deciding which to sort after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col > 5</td>
+                            <td>Filter</td>
+                            <td>Condition to filter after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col LIKE '%me%'</td>
+                            <td>Label-based</td>
+                            <td>What to start/end with</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col IN ('Y', 'N')</td>
+                            <td>Other filter statement</td>
+                            <td>Several things to filter after</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="joins">
+                <h2>SQL joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="aggregations">
+                <h2>SQL Aggregations</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subquery/temp_table">
+                <h2>Subquery/Temp table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="data cleaning">
+                <h2>Data Cleaning</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="window_function">
+                <h2>SQL Window Function</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="advanced_joins">
+                <h2>Advanced joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+        <div id="Javascript" class="tabcontent">
+            <div id="basic">
+                <h2>Basic - SQL</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">SELECT Col1, Col2 </td>
+                            <td>Select what</td>
+                            <td>Selecting everything from what is filtered</td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM Table</td>
+                            <td>Where from</td>
+                            <td>Deciding where to chose from</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LIMIT 10</td>
+                            <td>How much</td>
+                            <td>Deciding how many rows to chose</td>
+                        </tr>
+                        <tr>
+                            <td class="code">ORDER BY Col</td>
+                            <td>Sorting query</td>
+                            <td>Deciding which to sort after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col > 5</td>
+                            <td>Filter</td>
+                            <td>Condition to filter after</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col LIKE '%me%'</td>
+                            <td>Label-based</td>
+                            <td>What to start/end with</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE Col IN ('Y', 'N')</td>
+                            <td>Other filter statement</td>
+                            <td>Several things to filter after</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="joins">
+                <h2>SQL joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="aggregations">
+                <h2>SQL Aggregations</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="subquery/temp_table">
+                <h2>Subquery/Temp table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="data cleaning">
+                <h2>Data Cleaning</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="window_function">
+                <h2>SQL Window Function</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="advanced_joins">
+                <h2>Advanced joins</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "statement">Statement</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Primary/Foreign Key</td>
+                            <td>Important aspects</td>
+                            <td>Join Primary Key on Foreign Key</td>
+                        </tr>
+                        <tr>
+                            <td class="code">On Statement</td>
+                            <td>How to Join</td>
+                            <td>On orders.account_id = accounts.id</td>
+                        </tr>
+                        <tr>
+                            <td class="code">LEFT JOIN</td>
+                            <td>Joining two tables</td>
+                            <td>Everything LEFT + common Right</td>
+                        </tr>
+                        <tr>
+                            <td class="code">WHERE</td>
+                            <td>Reduce code</td>
+                            <td>Have WHERE in ON clause to reduce rows before </td>
+                        </tr>
+                        <tr>
+                            <td class="code">FROM State s JOIN region r ON s.region_id = r.id</td>
+                            <td>Alias the tables</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span onclick="this.parentElement.style.display='none'">x</span>
+        </div>
+
+        <div id="About_Us" class="tabcontent">
+            <div class="about-section">
+                <h1>About Us</h1>
+                <p>Hello, we are the people running this page</p>
+            </div>
+
+            <h2 style="text-align:center">Our team</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <figure class="picture">
+                            <img src="img/image.jpg" alt="Elias" style="width:100%">
+                        </figure>
+                        <div class="container">
+                        <h2>Elias Nordlinder</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p>Student etc.</p>
+                        <p>Elias.Nordlinder@gmail.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <figure class="picture">
+                            <img src="img/mike_ross.jpg" alt="Mike" style="width:100%">
+                        </figure>
+                        <div class="container">
+                        <h2>Mike Ross</h2>
+                        <p class="title">Legal Aquisitions</p>
+                        <p>Not Harward Student</p>
+                        <p>Neverwenttoharward@suits.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <figure class="picture">
+                            <img src="img/harvey_specter.jpg" alt="Harvey" style="width:100%">
+                        </figure>
+                        <div class="container">
+                            <h2>Harvey Specter</h2>
+                            <p class="title">Baby Sitter</p>
+                            <p>Baby Sitter for Mike</p>
+                            <p>Ilovelouislitt@suits.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <h5> Made by Elias N</h5>
+        </footer>
+        <script src="js/script.js"></script>
+  </body>
+</html>
