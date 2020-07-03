@@ -1,8 +1,10 @@
 # Obesity vs Education
-Analyzing how Obesity and education is correlated
+In this project I will analyze how Obesity and education is correlated.
+Like in all of my projects I will make a medium blog post as well of my findings and publish the workbook to Tableau Public.
+Please find the links and files used below.
 
 # Medium Post
-(In Progress)
+|(In Progress)|Medium post to better describe my visualization|
 
 # Tableau Public
 |[Obesity vs Education](https://public.tableau.com/profile/elias.nordlinder#!/vizhome/Obesity_vs_education/ObesityvsEducation)| Story over visualization of Obesity vs Education|
