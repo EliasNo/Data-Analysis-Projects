@@ -4,7 +4,8 @@ In the beginning these projects will be very similar to the ones in Power BI, as
 
 # Tableau Public
 Please find my Tablea Public Page below with all the Vizes.
-[Tablea Public Page](https://public.tableau.com/profile/elias.nordlinder#!/)
+
+[Tableau Public Page](https://public.tableau.com/profile/elias.nordlinder#!/)
 
 # Projects
 |Folder names|Description| 
