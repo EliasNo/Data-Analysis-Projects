@@ -4,9 +4,12 @@ It is everything from doing ML competitions and EDA in python of interesting dat
 Please take a look and explore and see if you find anything interesting!
 
 # Links
-[Tableau Public](https://public.tableau.com/profile/elias.nordlinder#!/?newProfile=&activeTab=0)
-
-[Medium](https://medium.com/@elias.nordlinder)
+|Folder names|Description|
+|---|---|
+|[Tableau Public](https://public.tableau.com/profile/elias.nordlinder#!/?newProfile=&activeTab=0)|Posting my Tableau Findings|
+|[Medium](https://medium.com/@elias.nordlinder)|Blogging about my findings|
+|[Kaggle](https://www.kaggle.com/eliasno)|Exploring datasets|
+|[Linkedin](https://www.linkedin.com/in/elias-nordlinder)|My Linkedin Profile|
 
 # Projects
 |Folder names|Description| 
