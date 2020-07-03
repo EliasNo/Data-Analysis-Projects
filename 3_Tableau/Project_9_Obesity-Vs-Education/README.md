@@ -4,7 +4,7 @@ Like in all of my projects I will make a medium blog post as well of my findings
 Please find the links and files used below.
 
 # Medium Post
-|(In Progress)|Medium post to better describe my visualization|
+|[Obesity vs Education](https://medium.com/@elias.nordlinder/are-people-with-a-lower-level-of-education-more-obese-95bc0554bb0b)|Medium post to better describe my visualization|
 
 # Tableau Public
 |[Obesity vs Education](https://public.tableau.com/profile/elias.nordlinder#!/vizhome/Obesity_vs_education/ObesityvsEducation)| Story over visualization of Obesity vs Education|
