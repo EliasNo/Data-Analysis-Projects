@@ -26,13 +26,11 @@ Please take a look and explore and see if you find anything interesting!
 
 <br></br>
 <br></br>
-<br></br>
 
 Picture from Python Project regarding AirBNB:
 <br></br>
 ![Python - AirBNB - Boston vs Seattle](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/1_Python/Project_2_Data-Analyzing-Jupyter-Notebook/airBNB_Picture.PNG)
 
-<br></br>
 <br></br>
 <br></br>
 
@@ -41,7 +39,6 @@ Picture from Python Project regarding Indian Jobs:
 ![Python - Indian Jobs](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/1_Python/Kaggle_Competitions/Job-Seekers/Indian_Example.PNG)
 
 
-<br></br>
 <br></br>
 <br></br>
 
