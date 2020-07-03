@@ -14,7 +14,5 @@ Please find the links and files used below.
 |---|---|
 |Obesity_vs._Education.csv|Data over Obesity rates and higher education levels in the US in 2018|
 
-<br>
-<br>
 Picture from Tableau file and the project:
 ![Obesity vs Education](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/3_Tableau/Project_9_Obesity-Vs-Education/Obesity_Vs_Education.PNG)
