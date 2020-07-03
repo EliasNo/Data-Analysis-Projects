@@ -1,5 +1,8 @@
 # Medium
-Here I will link to different Medium Blog posts that I have done regarding Analyzing data
+Here I will link to different Medium Blog posts that I have done regarding Analyzing data.
+Here is my Medium Profile:
+
+[Medium - Elias Nordlinder](https://medium.com/@elias.nordlinder)
 
 # Projects
 |Folder names|Description| 
