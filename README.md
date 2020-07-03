@@ -23,3 +23,23 @@ Please take a look and explore and see if you find anything interesting!
 |[Medium](https://medium.com/@elias.nordlinder)|Blogging about my findings|
 |[Kaggle](https://www.kaggle.com/eliasno)|Exploring datasets|
 |[Linkedin](https://www.linkedin.com/in/elias-nordlinder)|My Linkedin Profile|
+
+<br></br>
+<br></br>
+<br></br>
+
+Picture from Python Project regarding AirBNB:
+![Python - AirBNB - Boston vs Seattle](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/1_Python/Project_2_Data-Analyzing-Jupyter-Notebook/airBNB_Picture.PNG)
+
+<br></br>
+<br></br>
+<br></br>
+
+![Python - Indian Jobs](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/1_Python/Kaggle_Competitions/Job-Seekers/Indian_Example.PNG)
+
+<br></br>
+<br></br>
+<br></br>
+
+![Tableau - Obesity vs Education](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/3_Tableau/Project_9_Obesity-Vs-Education/Obesity_Vs_Education.PNG)
+
