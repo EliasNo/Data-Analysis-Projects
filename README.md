@@ -3,14 +3,6 @@ In this folder is all different kind of programs I use for doing different kind 
 It is everything from doing ML competitions and EDA in python of interesting datasets, to analyzing datasets in Power BI or Tableau, to fun queries in SQL.
 Please take a look and explore and see if you find anything interesting!
 
-# Links
-|Folder names|Description|
-|---|---|
-|[Tableau Public](https://public.tableau.com/profile/elias.nordlinder#!/?newProfile=&activeTab=0)|Posting my Tableau Findings|
-|[Medium](https://medium.com/@elias.nordlinder)|Blogging about my findings|
-|[Kaggle](https://www.kaggle.com/eliasno)|Exploring datasets|
-|[Linkedin](https://www.linkedin.com/in/elias-nordlinder)|My Linkedin Profile|
-
 # Projects
 |Folder names|Description| 
 |---|---|
@@ -23,3 +15,11 @@ Please take a look and explore and see if you find anything interesting!
 |[7 Big Query](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/7_BigQuery)|Similar as for SQL but for really big datasets|
 |[8 DataStudio](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/8_DataStudio)|Working with the bigqueries in other program than Power BI and Tableau|
 |[9 AWS/Azure](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/9_AWS_Azure)|As the clouds seems to be the future, learning how to play around with them|
+
+# Social Media Links
+|Folder names|Description|
+|---|---|
+|[Tableau Public](https://public.tableau.com/profile/elias.nordlinder#!/?newProfile=&activeTab=0)|Posting my Tableau Findings|
+|[Medium](https://medium.com/@elias.nordlinder)|Blogging about my findings|
+|[Kaggle](https://www.kaggle.com/eliasno)|Exploring datasets|
+|[Linkedin](https://www.linkedin.com/in/elias-nordlinder)|My Linkedin Profile|
