@@ -2,6 +2,10 @@
 Analyzing and visualizing interesting datasets in Tableau
 In the beginning these projects will be very similar to the ones in Power BI, as I want to try out and compare which visualization that can be done in each program and the differences and similarities in the both.
 
+# Tableau Public
+Please find my Tablea Public Page below with all the Vizes.
+[Tablea Public Page](https://public.tableau.com/profile/elias.nordlinder#!/)
+
 # Projects
 |Folder names|Description| 
 |---|---|
@@ -21,3 +25,4 @@ In the beginning these projects will be very similar to the ones in Power BI, as
 # Data Files
 All projects are saved as Tableau Packaged Workbooks which means that the underlying datafiles are included.
 Open the Tableau Packaged Workbook file, save it as a normal workbook and you will find all the underlying datafiles.
+
