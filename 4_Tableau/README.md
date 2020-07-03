@@ -17,3 +17,7 @@ In the beginning these projects will be very similar to the ones in Power BI, as
 |[Project 10: Rat sightsings](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_10_rat-sightings)|Analyzing dataset regarding rat sightings in New York|
 |[Project 11: Superstore](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_11_Superstore)|Analyzing classic Superstore dataset|
 |[Project 12: Top IPO](https://github.com/EliasNo/Data-Analysis-Projects/tree/master/4_Tableau/Project_12_top-IPO)|Analyzing most successful IPO's|
+
+# Data Files
+All projects are saved as Tableau Packaged Workbooks which means that the underlying datafiles are included.
+Open the Tableau Packaged Workbook file, save it as a normal workbook and you will find all the underlying datafiles.
