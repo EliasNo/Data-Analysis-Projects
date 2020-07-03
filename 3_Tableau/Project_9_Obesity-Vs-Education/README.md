@@ -5,7 +5,7 @@ Analyzing how Obesity and education is correlated
 (In Progress)
 
 # Tableau Public
-[Obesity vs Education](https://public.tableau.com/profile/elias.nordlinder#!/vizhome/Obesity_vs_education/ObesityvsEducation)
+|[Obesity vs Education](https://public.tableau.com/profile/elias.nordlinder#!/vizhome/Obesity_vs_education/ObesityvsEducation)| Story over visualization of Obesity vs Education|
 
 # Files used
 |File name|Description| 
