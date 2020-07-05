@@ -47,3 +47,10 @@ Picture from Tableau Project regarding Obesity and Education
 
 ![Tableau - Obesity vs Education](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/3_Tableau/Project_9_Obesity-Vs-Education/Obesity_Vs_Education.PNG)
 
+
+<br></br>
+<br></br>
+Picture from Tableau Project regarding Beer Prices
+<br></br>
+![Tableau - Beer Prices](https://github.com/EliasNo/Data-Analysis-Projects/blob/master/3_Tableau/Project_1-BeerPrices/jitter-plot.PNG)
+
