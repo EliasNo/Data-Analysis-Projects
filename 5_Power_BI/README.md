@@ -2,6 +2,8 @@
 Analyzing and visualizing interesting datasets in Power BI.
 In the beginning these projects will be very similar to the ones in Tableau, as I want to try out and compare which visualization that can be done in each program and the differences and similarities in the both.
 
+Therefore, the datasets are mostly clean when I begin to work with them, and there are not much cleaning done in the Power Environment.
+
 # Projects
 |Folder names|Description| 
 |---|---|
